@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Fotoram.io.png" />
+    <None Remove="github-logo %281%29.png" />
+    <None Remove="undo.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Fotoram.io.png" />
+    <Resource Include="github-logo (1).png" />
+    <Resource Include="undo.png" />
+  </ItemGroup>
+
+</Project>

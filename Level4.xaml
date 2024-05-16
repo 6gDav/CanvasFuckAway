@@ -1,0 +1,40 @@
+﻿<Window x:Class="ChackPoint_tst_No1.Level4"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ChackPoint_tst_No1"
+        mc:Ignorable="d"
+        KeyUp="MoveBirdUp"
+        KeyDown="MoveBirdDown"
+        Keyboard.KeyUp="MoveBirdLeft"
+        Keyboard.KeyDown="MoveBirdRight"
+        Title="Level4" Height="450" Width="800" WindowStyle="None">
+    <Canvas x:Name="gameCanvas" Background="White" Margin="0,0,0,-6">
+        <!-- ChackPoint elem -->
+        <Rectangle x:Name="chackPoint" Width="50" Height="50" Fill="Green" Canvas.Left="606" Canvas.Top="50" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <!-- Bird elem -->
+        <Ellipse x:Name="bird" Width="20" Height="20" Fill="#FF006DFF" Canvas.Left="269" Canvas.Top="45" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <!-- FuckPoint elem -->
+        <Rectangle x:Name="fuckPoint" Width="800" Height="120" Fill="Red" Canvas.Left="-10" Canvas.Top="304" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Rectangle x:Name="fuckPoint2" Width="100" Height="226" Fill="Red" Canvas.Left="-10" Canvas.Top="78" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Rectangle x:Name="fuckPoint3" Width="212" Height="179" Fill="Red" Canvas.Left="345" Canvas.Top="10" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Rectangle x:Name="movemode" Width="55" Height="75" Fill="Pink" Canvas.Left="345" Canvas.Top="209" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <!--score-->
+        <Rectangle x:Name="Score" Width="111" Height="58" Fill="Yellow" Canvas.Left="129" Canvas.Top="136" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <!-- Spawn elem -->
+        <Canvas Height="14" Width="120" Canvas.Left="220" Canvas.Top="67" Background="#FFB9792C" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <!--level-->
+        <Label Content="Level 4" Canvas.Left="17" Canvas.Top="10" FontSize="25" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <!--chack pont text-->
+        <Label x:Name="chackpointtext" Content="Chack Point" Canvas.Left="595" Canvas.Top="19" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Label x:Name="watch" Content="0" Canvas.Left="703" Canvas.Top="19" FontSize="25" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.892,0.556"/>
+        <!--dead_lv-->
+        <Label x:Name="dead_lb" Canvas.Left="703" Canvas.Top="68" FontSize="25" Content="0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <!--score_lb-->
+        <Label x:Name="score_lb" Canvas.Left="703" Canvas.Top="116" FontSize="25" Content="0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Rectangle x:Name="movemode2" Width="223" Height="44" Fill="Pink" Canvas.Left="562" Canvas.Top="150" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Rectangle x:Name="enemy" Width="52" Height="52" Fill="Orange" Canvas.Left="699" Canvas.Top="232" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Button x:Name="close" Content="close" HorizontalAlignment="Left" Margin="750,10,0,0" VerticalAlignment="Top" Click="close_Click"/>
+    </Canvas>
+</Window>

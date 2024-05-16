@@ -1,0 +1,33 @@
+﻿<Window x:Class="ChackPoint_tst_No1.GameRule"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ChackPoint_tst_No1"
+        mc:Ignorable="d"
+        Title="GameRule" Height="450" Width="800" WindowStyle="None">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/Fotoram.io.png"/>
+        </Grid.Background>
+        <TextBlock HorizontalAlignment="Center" Margin="0,34,0,0" TextWrapping="Wrap" Text="Game Rules" VerticalAlignment="Top" FontSize="45"/>
+        <Canvas Margin="50,124,665,240" Background="Red"/>
+        <TextBlock HorizontalAlignment="Left" Margin="148,142,0,0" TextWrapping="Wrap" Text="Hurts you." VerticalAlignment="Top" FontSize="25" FontWeight="Bold"/>
+        <Canvas Margin="50,217,665,147" Background="Orange"/>
+        <TextBlock HorizontalAlignment="Left" Margin="148,216,0,0" TextWrapping="Wrap" Text="Relationship between romania and Hungary." VerticalAlignment="Top" FontSize="25" Height="101" Width="240" FontWeight="Bold"/>
+        <Canvas Margin="50,309,665,45" Background="Yellow"/>
+        <TextBlock HorizontalAlignment="Left" Margin="148,332,0,0" TextWrapping="Wrap" Text="Loves you." VerticalAlignment="Top" FontSize="25" FontWeight="Bold"/>
+        <Canvas Margin="410,124,300,240" Background="Pink"/>
+        <TextBlock HorizontalAlignment="Left" Margin="511,140,0,0" TextWrapping="Wrap" Text="Hates you??" VerticalAlignment="Top" FontSize="25" FontWeight="Bold"/>
+        <Canvas Margin="410,217,300,147" Background="#FFB9792C"/>
+        <TextBlock HorizontalAlignment="Left" Margin="511,233,0,0" TextWrapping="Wrap" Text="Your jimbro." VerticalAlignment="Top" FontSize="25" FontWeight="Bold"/>
+        <Canvas Margin="410,309,300,55" Background="Green"/>
+        <TextBlock HorizontalAlignment="Left" Margin="511,309,0,0" TextWrapping="Wrap" Text="Your chrus who actually hates you." VerticalAlignment="Top" FontSize="25" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Margin="110,34,0,0" TextWrapping="Wrap" Text="dont cheat pls" VerticalAlignment="Top"/>
+        <Button x:Name="back" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="40" Width="40" Click="back_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="/undo.png"/>
+            </Button.Background>
+        </Button>
+    </Grid>
+</Window>

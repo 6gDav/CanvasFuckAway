@@ -1,0 +1,24 @@
+﻿<Window x:Class="ChackPoint_tst_No1.GameScore_Survey"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ChackPoint_tst_No1"
+        mc:Ignorable="d"
+        Title="GameScore_Survey" Height="450" Width="800"
+        WindowStyle="None">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/Fotoram.io.png"/>
+        </Grid.Background>
+        <Button x:Name="close" Content="close" HorizontalAlignment="Left" Margin="750,10,0,0" VerticalAlignment="Top" Click="close_Click"/>
+        <TextBlock HorizontalAlignment="Center" Margin="0,57,0,0" TextWrapping="Wrap" Text="Game Performance Survey" VerticalAlignment="Top" FontSize="55" Width="648"/>
+        <TextBlock HorizontalAlignment="Left" Margin="76,155,0,0" TextWrapping="Wrap" Text="Score:" VerticalAlignment="Top" FontSize="35"/>
+        <TextBlock HorizontalAlignment="Left" Margin="76,225,0,0" TextWrapping="Wrap" Text="Time:" VerticalAlignment="Top" FontSize="35"/>
+        <TextBlock HorizontalAlignment="Left" Margin="76,295,0,0" TextWrapping="Wrap" Text="Dead:" VerticalAlignment="Top" FontSize="35"/>
+        <Label x:Name="sc_lb" Content="Label" HorizontalAlignment="Left" Margin="215,150,0,0" VerticalAlignment="Top" FontSize="35" Foreground="#FFB434BB" Background="White"/>
+        <Label x:Name="ti_lb" Content="Label" HorizontalAlignment="Left" Margin="215,225,0,0" VerticalAlignment="Top" FontSize="35" Foreground="#FFB434BB" Background="White"/>
+        <Label x:Name="de_lb" Content="Label" HorizontalAlignment="Left" Margin="215,295,0,0" VerticalAlignment="Top" FontSize="35" Foreground="#FFB434BB" Background="White"/>
+        <Button x:Name="lobby" Content="Lobby" HorizontalAlignment="Left" Margin="598,278,0,0" VerticalAlignment="Top" FontSize="45" Click="lobby_Click"/>
+    </Grid>
+</Window>
