@@ -45,7 +45,7 @@ namespace ChackPoint_tst_No1
 
         private void git_link_Click(object sender, RoutedEventArgs e)
         {
-            string gitRepoUrl = "https://github.com/6gDav/CanvasFuckAway_No1_Done-.git";
+            string gitRepoUrl = "https://github.com/6gDav/CanvasFuckAway.git";
 
             OpenUrlInBrowser(gitRepoUrl);
         }
